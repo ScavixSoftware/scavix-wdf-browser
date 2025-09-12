@@ -5,9 +5,4 @@ It contains logic for browser detection.
 
 Installation
 ============
-Install the package with `composer require scavix/wdf-browser`
-
-Dependencies
-============
-
-* [garetjax/phpbrowscap](https://packagist.org/packages/garetjax/phpbrowscap)
+Install the package with `composer require {{name}}`.
