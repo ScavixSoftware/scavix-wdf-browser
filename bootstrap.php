@@ -144,14 +144,15 @@ function browserDetails($user_agent = null, $key = null)
     });
     $bd = array_change_key_case($caps->getBrowser($user_agent, true), CASE_LOWER);
 
-    if (ifavail($bd, 'browser') == 'Default Browser')
+
+    if (($bd['browser'] ?? '') == 'Default Browser')
         $bd = [];
 
     $bd['name'] = implode(' ', array_filter(
         [
-            ifavail($bd, 'browser'),
-            ((avail($bd, 'version') && ($bd['version'] != '0.0')) ? $bd['version'] : ''),
-            ifavail($bd, 'platform'),
+            ($bd['browser'] ?? ''),
+            str_replace('0.0', '', $bd['version'] ?? '')
+            ($bd['platform'] ?? '')
         ]));
 
     if (!isset($bd['browser_name']))
@@ -161,10 +162,10 @@ function browserDetails($user_agent = null, $key = null)
     if (!isset($bd['browser']))
         $bd['browser'] = "Unknown";
     if (!isset($bd['version']))
-        $bd['version'] = 0.0;
+        $bd['version'] = '0.0';
     $bd['agent'] = $bd['browser_name'];
     $bd['browser_id'] = strtoupper($bd['browser']);
     $bd['major_version'] = intval($bd['version']);
 
-    return $key ? ifavail($bd, $key) : $bd;
+    return $key ? ($bd[$key] ?? '') : $bd;
 }
