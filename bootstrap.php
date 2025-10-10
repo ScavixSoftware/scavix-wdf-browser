@@ -144,7 +144,6 @@ function browserDetails($user_agent = null, $key = null)
     });
     $bd = array_change_key_case($caps->getBrowser($user_agent, true), CASE_LOWER);
 
-
     if (($bd['browser'] ?? '') == 'Default Browser')
         $bd = [];
 
