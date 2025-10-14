@@ -151,7 +151,7 @@ function browserDetails($user_agent = null, $key = null)
     $bd['name'] = implode(' ', array_filter(
         [
             ($bd['browser'] ?? ''),
-            str_replace('0.0', '', $bd['version'] ?? '')
+            str_replace('0.0', '', $bd['version'] ?? ''),
             ($bd['platform'] ?? '')
         ]));
 
