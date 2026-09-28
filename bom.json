@@ -1,9 +1,9 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "version": 5,
+  "version": 6,
   "metadata": {
-    "timestamp": "2026-04-22T11:45:06.781Z",
+    "timestamp": "2026-09-28T06:56:44.785Z",
     "manufacturer": {
       "name": "Scavix Software GmbH & Co. KG",
       "url": [
@@ -12,11 +12,11 @@
     },
     "component": {
       "type": "library",
-      "bom-ref": "pkg:composer/scavix/wdf-browser@1.1.2",
-      "purl": "pkg:composer/scavix/wdf-browser@1.1.2",
+      "bom-ref": "pkg:composer/scavix/wdf-browser@1.1.6",
+      "purl": "pkg:composer/scavix/wdf-browser@1.1.6",
       "group": "scavix",
       "name": "wdf-browser",
-      "version": "1.1.2",
+      "version": "1.1.6",
       "supplier": {
         "name": "Scavix Software GmbH & Co. KG",
         "url": [
@@ -48,11 +48,11 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "pkg:composer/scavix/wdf-browser@1.1.2",
-      "purl": "pkg:composer/scavix/wdf-browser@1.1.2",
+      "bom-ref": "pkg:composer/scavix/wdf-browser@1.1.6",
+      "purl": "pkg:composer/scavix/wdf-browser@1.1.6",
       "group": "scavix",
       "name": "wdf-browser",
-      "version": "1.1.2",
+      "version": "1.1.6",
       "supplier": {
         "name": "Scavix Software GmbH & Co. KG",
         "url": [
@@ -82,11 +82,11 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:composer/scavix/wdf-core@1.1.2",
-      "purl": "pkg:composer/scavix/wdf-core@1.1.2",
+      "bom-ref": "pkg:composer/scavix/wdf-core@1.1.6",
+      "purl": "pkg:composer/scavix/wdf-core@1.1.6",
       "group": "scavix",
       "name": "wdf-core",
-      "version": "1.1.2",
+      "version": "1.1.6",
       "supplier": {
         "name": "Scavix Software GmbH & Co. KG",
         "url": [
@@ -261,14 +261,14 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:composer/scavix/wdf-browser@1.1.2",
+      "ref": "pkg:composer/scavix/wdf-browser@1.1.6",
       "dependsOn": [
-        "pkg:composer/scavix/wdf-core@1.1.2",
+        "pkg:composer/scavix/wdf-core@1.1.6",
         "pkg:composer/garetjax/phpbrowscap@2.0.0"
       ]
     },
     {
-      "ref": "pkg:composer/scavix/wdf-core@1.1.2",
+      "ref": "pkg:composer/scavix/wdf-core@1.1.6",
       "dependsOn": [
         "pkg:composer/wikimedia/less.php@5.5.1",
         "external:jQuery@3.7.1",

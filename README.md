@@ -5,4 +5,9 @@ It contains logic for browser detection.
 
 Installation
 ============
-Install the package with `composer require {{name}}`.
+Install the package with `composer require scavix/wdf-browser`.
+
+Dependencies
+------------
+* [scavix/wdf-core (^1.1.6)](https://packagist.org/packages/scavix/wdf-core#v1.1.6)
+* [garetjax/phpbrowscap (^2.0)](https://packagist.org/packages/garetjax/phpbrowscap#v2.0)
